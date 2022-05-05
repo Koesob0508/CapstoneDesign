@@ -19,6 +19,7 @@ public class CarAgent : Agent
     public GameObject stoneFL;
 
     public float distance;
+    public float[] distanceList;
 
     // 8 방향에 대한 Ray
     private Ray rayFront;
@@ -32,12 +33,10 @@ public class CarAgent : Agent
 
     // 관리하기 편하기 위한 List 형태
     public List<GameObject> stoneList;
-    private List<Ray> rayList;
 
     private void Awake()
     {
         stoneList = new List<GameObject>();
-        rayList = new List<Ray>();
     }
 
     private void Start()
@@ -55,25 +54,29 @@ public class CarAgent : Agent
         // Ray를 stone의 위치로 초기화
         UpdateRay();
 
-        // Ray를 rayList에 추가
-        rayList.Add(rayFront);
-        rayList.Add(rayFR);
-        rayList.Add(rayRight);
-        rayList.Add(rayBR);
-        rayList.Add(rayBack);
-        rayList.Add(rayBL);
-        rayList.Add(rayLeft);
-        rayList.Add(rayFL);
+        distanceList = new float[stoneList.Count];
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // RayList 순회하면서 Time.deltaTime만큼 그리기
-        for(int index=0; index<rayList.Count; index++)
+        CastRay();
+        UpdateRay();
+        DebugRay();
+    }
+
+    private void CastRay()
+    {
+        RaycastHit[] raycastHit;
+
+        raycastHit = Physics.RaycastAll(rayFront, distance);
+
+        foreach(RaycastHit rayHit in raycastHit)
         {
-            UpdateRay();
-            DebugRay();
+            Debug.Log(rayFront.origin);
+            Debug.Log(this.gameObject.name + " " + rayHit.collider.gameObject.name + " " + rayHit.distance);
         }
+
+        // UpdateDistance(0, raycastHit);
     }
 
     /// <summary>
@@ -97,14 +100,14 @@ public class CarAgent : Agent
     /// </summary>
     private void DebugRay()
     {
-        Debug.DrawRay(rayFront.origin, rayFront.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayFR.origin, rayFR.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayRight.origin, rayRight.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayBR.origin, rayBR.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayBack.origin, rayBack.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayBL.origin, rayBL.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayLeft.origin, rayLeft.direction, Color.red, Time.deltaTime);
-        Debug.DrawRay(rayFL.origin, rayFL.direction, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayFront.origin, rayFront.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayFR.origin, rayFR.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayRight.origin, rayRight.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayBR.origin, rayBR.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayBack.origin, rayBack.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayBL.origin, rayBL.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayLeft.origin, rayLeft.direction * distance, Color.red, Time.deltaTime);
+        Debug.DrawRay(rayFL.origin, rayFL.direction * distance, Color.red, Time.deltaTime);
 
     }
 
@@ -116,6 +119,23 @@ public class CarAgent : Agent
     private void LinkStoneToRay(GameObject _stone, out Ray _ray)
     {
         _ray = new Ray(_stone.transform.position, _stone.transform.forward);
+    }
+
+    private void UpdateDistance(int _index, RaycastHit[] _raycastHits)
+    {
+        if(_raycastHits.Length != 1)
+        {
+            Array.Sort(_raycastHits, (RaycastHit x, RaycastHit y) => x.distance.CompareTo(y.distance));
+            distanceList[_index] = _raycastHits[1].distance;
+            Debug.Log(_raycastHits[0].collider.gameObject.name);
+            Debug.Log(_raycastHits[1].collider.gameObject.name);
+        }
+        else
+        {
+            distanceList[_index] = 0;
+            Debug.Log("미접촉");
+        }
+        
     }
 
     /// <summary>
@@ -143,6 +163,4 @@ public class CarAgent : Agent
     {
         base.OnActionReceived(actions);
     }
-
-    
 }
