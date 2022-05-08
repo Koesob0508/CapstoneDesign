@@ -1,0 +1,62 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\CS_01\\CarSimulation\\CarSimulation-0.onnx",
+                "reward": null,
+                "creation_time": 1651740025.9488664,
+                "auxillary_file_paths": [
+                    "results\\CS_01\\CarSimulation\\CarSimulation-0.pt"
+                ]
+            },
+            {
+                "steps": 5061,
+                "file_path": "results\\CS_01\\CarSimulation\\CarSimulation-5061.onnx",
+                "reward": -10.958000302314758,
+                "creation_time": 1651740967.5725272,
+                "auxillary_file_paths": [
+                    "results\\CS_01\\CarSimulation\\CarSimulation-5061.pt"
+                ]
+            },
+            {
+                "steps": 20853,
+                "file_path": "results\\CS_01\\CarSimulation\\CarSimulation-20853.onnx",
+                "reward": -1.122100055217743,
+                "creation_time": 1651741295.341079,
+                "auxillary_file_paths": [
+                    "results\\CS_01\\CarSimulation\\CarSimulation-20853.pt"
+                ]
+            },
+            {
+                "steps": 65017,
+                "file_path": "results\\CS_01\\CarSimulation\\CarSimulation-65017.onnx",
+                "reward": -1.6505500972270966,
+                "creation_time": 1651742009.5254204,
+                "auxillary_file_paths": [
+                    "results\\CS_01\\CarSimulation\\CarSimulation-65017.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 65017,
+            "file_path": "results\\CS_01\\CarSimulation.onnx",
+            "reward": -1.6505500972270966,
+            "creation_time": 1651742009.5254204,
+            "auxillary_file_paths": [
+                "results\\CS_01\\CarSimulation\\CarSimulation-65017.pt"
+            ]
+        }
+    }
+}

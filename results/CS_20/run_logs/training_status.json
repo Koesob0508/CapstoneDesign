@@ -1,0 +1,35 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 130725,
+                "file_path": "results\\CS_20\\CarSimulation\\CarSimulation-130725.onnx",
+                "reward": null,
+                "creation_time": 1651813066.0376902,
+                "auxillary_file_paths": [
+                    "results\\CS_20\\CarSimulation\\CarSimulation-130725.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 130725,
+            "file_path": "results\\CS_20\\CarSimulation.onnx",
+            "reward": null,
+            "creation_time": 1651813066.0376902,
+            "auxillary_file_paths": [
+                "results\\CS_20\\CarSimulation\\CarSimulation-130725.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

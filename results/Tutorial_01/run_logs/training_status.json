@@ -1,0 +1,71 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 999467,
+                "file_path": "results\\Tutorial_01\\CarSimulation\\CarSimulation-999467.onnx",
+                "reward": null,
+                "creation_time": 1651934559.5433948,
+                "auxillary_file_paths": [
+                    "results\\Tutorial_01\\CarSimulation\\CarSimulation-999467.pt"
+                ]
+            },
+            {
+                "steps": 1499755,
+                "file_path": "results\\Tutorial_01\\CarSimulation\\CarSimulation-1499755.onnx",
+                "reward": null,
+                "creation_time": 1651935608.471439,
+                "auxillary_file_paths": [
+                    "results\\Tutorial_01\\CarSimulation\\CarSimulation-1499755.pt"
+                ]
+            },
+            {
+                "steps": 1999574,
+                "file_path": "results\\Tutorial_01\\CarSimulation\\CarSimulation-1999574.onnx",
+                "reward": null,
+                "creation_time": 1651936658.0125847,
+                "auxillary_file_paths": [
+                    "results\\Tutorial_01\\CarSimulation\\CarSimulation-1999574.pt"
+                ]
+            },
+            {
+                "steps": 2499294,
+                "file_path": "results\\Tutorial_01\\CarSimulation\\CarSimulation-2499294.onnx",
+                "reward": -0.9499998390674591,
+                "creation_time": 1651937800.7479117,
+                "auxillary_file_paths": [
+                    "results\\Tutorial_01\\CarSimulation\\CarSimulation-2499294.pt"
+                ]
+            },
+            {
+                "steps": 2976360,
+                "file_path": "results\\Tutorial_01\\CarSimulation\\CarSimulation-2976360.onnx",
+                "reward": null,
+                "creation_time": 1651940391.7044275,
+                "auxillary_file_paths": [
+                    "results\\Tutorial_01\\CarSimulation\\CarSimulation-2976360.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2976360,
+            "file_path": "results\\Tutorial_01\\CarSimulation.onnx",
+            "reward": null,
+            "creation_time": 1651940391.7044275,
+            "auxillary_file_paths": [
+                "results\\Tutorial_01\\CarSimulation\\CarSimulation-2976360.pt"
+            ]
+        }
+    }
+}

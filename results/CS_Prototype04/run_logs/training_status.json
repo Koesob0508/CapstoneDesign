@@ -1,0 +1,71 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 3499415,
+                "file_path": "results\\CS_Prototype04\\CarSimulation\\CarSimulation-3499415.onnx",
+                "reward": null,
+                "creation_time": 1651848928.4855304,
+                "auxillary_file_paths": [
+                    "results\\CS_Prototype04\\CarSimulation\\CarSimulation-3499415.pt"
+                ]
+            },
+            {
+                "steps": 3999683,
+                "file_path": "results\\CS_Prototype04\\CarSimulation\\CarSimulation-3999683.onnx",
+                "reward": -29.998400144977495,
+                "creation_time": 1651849752.4830942,
+                "auxillary_file_paths": [
+                    "results\\CS_Prototype04\\CarSimulation\\CarSimulation-3999683.pt"
+                ]
+            },
+            {
+                "steps": 4499060,
+                "file_path": "results\\CS_Prototype04\\CarSimulation\\CarSimulation-4499060.onnx",
+                "reward": -29.638089179992676,
+                "creation_time": 1651850590.423879,
+                "auxillary_file_paths": [
+                    "results\\CS_Prototype04\\CarSimulation\\CarSimulation-4499060.pt"
+                ]
+            },
+            {
+                "steps": 4999388,
+                "file_path": "results\\CS_Prototype04\\CarSimulation\\CarSimulation-4999388.onnx",
+                "reward": null,
+                "creation_time": 1651851425.7819004,
+                "auxillary_file_paths": [
+                    "results\\CS_Prototype04\\CarSimulation\\CarSimulation-4999388.pt"
+                ]
+            },
+            {
+                "steps": 5000388,
+                "file_path": "results\\CS_Prototype04\\CarSimulation\\CarSimulation-5000388.onnx",
+                "reward": null,
+                "creation_time": 1651851425.8979542,
+                "auxillary_file_paths": [
+                    "results\\CS_Prototype04\\CarSimulation\\CarSimulation-5000388.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000388,
+            "file_path": "results\\CS_Prototype04\\CarSimulation.onnx",
+            "reward": null,
+            "creation_time": 1651851425.8979542,
+            "auxillary_file_paths": [
+                "results\\CS_Prototype04\\CarSimulation\\CarSimulation-5000388.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
