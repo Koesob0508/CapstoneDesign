@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Navigator : MonoBehaviour
 {
+    public GameObject testAgent;
     public GameObject target;
     public List<Vector3> parkingPositions;
     public List<GameObject> parkingBlock;
@@ -21,12 +22,12 @@ public class Navigator : MonoBehaviour
     //    target.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
     //}
 
-    public void OnNavigator()
+    public virtual void OnNavigator()
     {
         SetParkingTest();
     }
 
-    public void MoveNextPosition()
+    public virtual void MoveNextPosition()
     {
         Debug.Log("∞Ò¿Œ");
         SetParkingTest();

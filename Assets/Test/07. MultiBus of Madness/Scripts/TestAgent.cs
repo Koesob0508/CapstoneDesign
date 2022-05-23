@@ -49,12 +49,13 @@ public class TestAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        this.gameObject.transform.localPosition = new Vector3(Random.Range(-5f, 5f), 0f, Random.Range(-5f, 5f));
-        this.gameObject.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
-        carRigidbody.velocity = Vector3.zero;
+        //this.gameObject.transform.localPosition = new Vector3(Random.Range(-5f, 5f), 0f, Random.Range(-5f, 5f));
+        //this.gameObject.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
+        
 
         // goal.transform.localPosition = goalPositionList[index];
         navigator.OnNavigator();
+        carRigidbody.velocity = Vector3.zero;
     }
 
     public override void CollectObservations(VectorSensor sensor)
