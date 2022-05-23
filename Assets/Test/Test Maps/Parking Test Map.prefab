@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079197940204735639}
   - component: {fileID: 8076920609872379617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Boundary
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 8528692088943035719}
   - component: {fileID: 7153137541971111461}
   - component: {fileID: 2088140907734427570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (13)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 6371179541306889535}
   - component: {fileID: 3600174817117709792}
   - component: {fileID: 6966699911959506223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (36)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 5981176547101813788}
   - component: {fileID: 6598990526101919510}
   - component: {fileID: 8134380639430698068}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (23)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 608552289095808375}
   - component: {fileID: 7947043867299002661}
   - component: {fileID: 6647137136812475199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (18)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 6872795729476612833}
   - component: {fileID: 6766598626114229500}
   - component: {fileID: 2306927333678015924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1564,7 +1564,7 @@ GameObject:
   - component: {fileID: 3563763383567971000}
   - component: {fileID: 699472901358708116}
   - component: {fileID: 5669014636795515033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (11)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1738,7 +1738,7 @@ GameObject:
   - component: {fileID: 65610722885713549}
   - component: {fileID: 6720691371730028065}
   - component: {fileID: 2983000691526600612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1832,7 +1832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8966679371710895132}
   - component: {fileID: 7249408470482135857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1878,7 +1878,7 @@ GameObject:
   - component: {fileID: 1888170910736657470}
   - component: {fileID: 7915258330402302021}
   - component: {fileID: 8831610230545462022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2113,7 +2113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840376987505659104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 0.1, z: 0}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3688072628627458621}
@@ -2661,7 +2661,7 @@ GameObject:
   - component: {fileID: 579147770979884471}
   - component: {fileID: 8336482715121378591}
   - component: {fileID: 1904198281048030816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2853,7 +2853,7 @@ GameObject:
   - component: {fileID: 7009510308808594233}
   - component: {fileID: 8289714862380021111}
   - component: {fileID: 5385702136161302971}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (30)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -3461,7 +3461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2375622981070607156}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7, y: 0.09999752, z: 14}
+  m_LocalPosition: {x: 7, y: 0, z: 14}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 5783459779421682964}
@@ -3636,7 +3636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4821042976959104643}
   - component: {fileID: 4753990010938025315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Down Collider 2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -4041,7 +4041,7 @@ GameObject:
   - component: {fileID: 2725771961097177957}
   - component: {fileID: 2694017745276726545}
   - component: {fileID: 3627449794806784119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sidewalk_11
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -4371,7 +4371,7 @@ GameObject:
   - component: {fileID: 4870080001802555888}
   - component: {fileID: 2746363186400606119}
   - component: {fileID: 691309921960654116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (19)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -4721,7 +4721,7 @@ GameObject:
   - component: {fileID: 2376165208024266991}
   - component: {fileID: 7512979845497844178}
   - component: {fileID: 4732057321136670485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (17)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -5164,7 +5164,7 @@ GameObject:
   - component: {fileID: 2635131267798336630}
   - component: {fileID: 8623835404735124995}
   - component: {fileID: 2808096408562264787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (25)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -5706,7 +5706,7 @@ GameObject:
   - component: {fileID: 7636406204083390223}
   - component: {fileID: 532995095722354069}
   - component: {fileID: 1577952230328269885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (15)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -5928,7 +5928,7 @@ GameObject:
   - component: {fileID: 9142795291718668804}
   - component: {fileID: 2453652169713737802}
   - component: {fileID: 714658736334968862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (28)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -6024,7 +6024,7 @@ GameObject:
   - component: {fileID: 4130924782494709766}
   - component: {fileID: 3904922399560036333}
   - component: {fileID: 1385205565068722998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (33)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -6505,7 +6505,7 @@ GameObject:
   - component: {fileID: 2627111340535477544}
   - component: {fileID: 3908462675438615874}
   - component: {fileID: 7341188901386694856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (21)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11762,7 +11762,7 @@ GameObject:
   - component: {fileID: 3688072628263454388}
   - component: {fileID: 3688072628263454389}
   - component: {fileID: 1539807959189444542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sidewalk_11 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -12927,7 +12927,7 @@ GameObject:
   - component: {fileID: 3845012057920001238}
   - component: {fileID: 3852224086725464290}
   - component: {fileID: 3873494111406229066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bus stop
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13370,7 +13370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3715524801911424383}
   - component: {fileID: 8506058542464969003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13608,7 +13608,7 @@ GameObject:
   - component: {fileID: 6361658820938541965}
   - component: {fileID: 7908813240568093741}
   - component: {fileID: 5122887182592304237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (26)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13716,7 +13716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4067884872276574012}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5, y: 0.1, z: 0}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4070854601703891820}
@@ -13893,7 +13893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9164736984123283186}
   - component: {fileID: 8877531111027192004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Down Collider 1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -14353,7 +14353,7 @@ GameObject:
   - component: {fileID: 4449680212137653641}
   m_Layer: 0
   m_Name: Mail_box prefab
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14609,7 +14609,7 @@ GameObject:
   - component: {fileID: 6024550209912959445}
   - component: {fileID: 8645506947949897266}
   - component: {fileID: 7543048623488752987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (32)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -14960,7 +14960,7 @@ GameObject:
   - component: {fileID: 968542158306715520}
   - component: {fileID: 1458604659020487526}
   - component: {fileID: 1315302636292583848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (22)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15154,7 +15154,7 @@ GameObject:
   - component: {fileID: 4317575074319630529}
   - component: {fileID: 3553596709880927241}
   - component: {fileID: 6640001727027012654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (31)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15604,7 +15604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4682117087059856604}
   - component: {fileID: 171822101297959078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Up Boundary
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15989,7 +15989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5786818846044613702}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 9, y: 0.09999752, z: -14.909201}
+  m_LocalPosition: {x: 9, y: 0, z: -14.909201}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 5783459779421682964}
@@ -16194,7 +16194,7 @@ GameObject:
   - component: {fileID: 543744692362650212}
   - component: {fileID: 1113144405097333246}
   - component: {fileID: 612335280558580824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16388,7 +16388,7 @@ GameObject:
   - component: {fileID: 1129962544943314604}
   - component: {fileID: 1201446948892900740}
   - component: {fileID: 1268281367093993830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (9)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16609,7 +16609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8525860491650308961}
   - component: {fileID: 5978340672507893048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Up Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16655,7 +16655,7 @@ GameObject:
   - component: {fileID: 7965622927923685899}
   - component: {fileID: 512415244816244850}
   - component: {fileID: 8566733147906675661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (20)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16876,7 +16876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7067209911131650212}
   - component: {fileID: 574772239586017739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Down Collider 3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16922,7 +16922,7 @@ GameObject:
   - component: {fileID: 6579769690801601196}
   - component: {fileID: 3896408195902107720}
   - component: {fileID: 7776593511590321235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (29)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -17145,7 +17145,7 @@ GameObject:
   - component: {fileID: 7718369209991131489}
   - component: {fileID: 2129819181774785211}
   - component: {fileID: 8637879813399691279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (16)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -17627,7 +17627,7 @@ GameObject:
   - component: {fileID: 2233139180238705994}
   - component: {fileID: 343533368347484790}
   - component: {fileID: 4031989513325431400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (14)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18040,7 +18040,7 @@ GameObject:
   - component: {fileID: 8997528538920926302}
   - component: {fileID: 278280490053072815}
   - component: {fileID: 928007036493565045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (7)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18261,7 +18261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026670952516580392}
   - component: {fileID: 4085123855482572374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Down Boundary
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18659,7 +18659,7 @@ GameObject:
   - component: {fileID: 6366345794501284399}
   - component: {fileID: 5355338527067809006}
   - component: {fileID: 3167984869721277007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (12)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -19339,7 +19339,7 @@ GameObject:
   - component: {fileID: 7667757517073464803}
   - component: {fileID: 7656739297381871363}
   - component: {fileID: 7708397293844514661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -19768,7 +19768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7946469044495839036}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 0.1, z: -3}
+  m_LocalPosition: {x: -2, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7949888113277198400}
@@ -20149,7 +20149,7 @@ GameObject:
   - component: {fileID: 4402233445552705209}
   - component: {fileID: 4544935549607459409}
   - component: {fileID: 7065709850487299538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (34)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -20384,7 +20384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8464183657847957232}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 8, y: 0.2, z: -10}
+  m_LocalPosition: {x: 8, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8465956309724503732}
@@ -20507,7 +20507,7 @@ GameObject:
   - component: {fileID: 7638866716251116814}
   - component: {fileID: 8050519281675799728}
   - component: {fileID: 7413892063704567290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (35)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -20634,7 +20634,7 @@ GameObject:
   - component: {fileID: 1823417750617011453}
   - component: {fileID: 6880303442358568145}
   - component: {fileID: 7867710314894878044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (27)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -20728,7 +20728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3519789245202915522}
   - component: {fileID: 28107685376127512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Boundary
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -20922,7 +20922,7 @@ GameObject:
   - component: {fileID: 6402066752654711846}
   - component: {fileID: 7020052656932936197}
   - component: {fileID: 319150887999558925}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (24)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -21018,7 +21018,7 @@ GameObject:
   - component: {fileID: 3816642090524513266}
   - component: {fileID: 4408970211522671959}
   - component: {fileID: 4328106061344508667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (8)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -21176,7 +21176,7 @@ GameObject:
   - component: {fileID: 5336190683224356054}
   - component: {fileID: 7592025521819847747}
   - component: {fileID: 4955359893779023195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (10)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -21653,7 +21653,7 @@ GameObject:
   - component: {fileID: 5695134539112826159}
   - component: {fileID: 1626984226730571122}
   - component: {fileID: 4578665770135503649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (6)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -22014,6 +22014,18 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 621896739960938418, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 621896739960938418, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 621896739960938418, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 621896739960938418, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -22071,7 +22083,7 @@ PrefabInstance:
       objectReference: {fileID: 8099134348880695951}
     - target: {fileID: 627688398019988230, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
       propertyPath: timeScale
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 627688398019988230, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
       propertyPath: targetRadius
