@@ -1,0 +1,71 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 1999633,
+                "file_path": "results\\MoreAccident_01\\CarSimulation\\CarSimulation-1999633.onnx",
+                "reward": null,
+                "creation_time": 1652117934.228844,
+                "auxillary_file_paths": [
+                    "results\\MoreAccident_01\\CarSimulation\\CarSimulation-1999633.pt"
+                ]
+            },
+            {
+                "steps": 2499758,
+                "file_path": "results\\MoreAccident_01\\CarSimulation\\CarSimulation-2499758.onnx",
+                "reward": -3.0,
+                "creation_time": 1652119684.5122693,
+                "auxillary_file_paths": [
+                    "results\\MoreAccident_01\\CarSimulation\\CarSimulation-2499758.pt"
+                ]
+            },
+            {
+                "steps": 2999656,
+                "file_path": "results\\MoreAccident_01\\CarSimulation\\CarSimulation-2999656.onnx",
+                "reward": null,
+                "creation_time": 1652121483.435715,
+                "auxillary_file_paths": [
+                    "results\\MoreAccident_01\\CarSimulation\\CarSimulation-2999656.pt"
+                ]
+            },
+            {
+                "steps": 3499068,
+                "file_path": "results\\MoreAccident_01\\CarSimulation\\CarSimulation-3499068.onnx",
+                "reward": null,
+                "creation_time": 1652123223.2328513,
+                "auxillary_file_paths": [
+                    "results\\MoreAccident_01\\CarSimulation\\CarSimulation-3499068.pt"
+                ]
+            },
+            {
+                "steps": 3523085,
+                "file_path": "results\\MoreAccident_01\\CarSimulation\\CarSimulation-3523085.onnx",
+                "reward": -1.0,
+                "creation_time": 1652123351.0281148,
+                "auxillary_file_paths": [
+                    "results\\MoreAccident_01\\CarSimulation\\CarSimulation-3523085.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3523085,
+            "file_path": "results\\MoreAccident_01\\CarSimulation.onnx",
+            "reward": -1.0,
+            "creation_time": 1652123351.0281148,
+            "auxillary_file_paths": [
+                "results\\MoreAccident_01\\CarSimulation\\CarSimulation-3523085.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
