@@ -1409,6 +1409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking Test Map
       objectReference: {fileID: 0}
+    - target: {fileID: 8627197226507958806, guid: 774a0b0aa90e0874bb5febd4bbc364f0, type: 3}
+      propertyPath: timeScale
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 774a0b0aa90e0874bb5febd4bbc364f0, type: 3}
 --- !u!1 &6088563443486314888 stripped
