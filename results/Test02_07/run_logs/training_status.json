@@ -1,0 +1,71 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 5499838,
+                "file_path": "results\\Test02_07\\CarSimulation\\CarSimulation-5499838.onnx",
+                "reward": null,
+                "creation_time": 1654560056.7070205,
+                "auxillary_file_paths": [
+                    "results\\Test02_07\\CarSimulation\\CarSimulation-5499838.pt"
+                ]
+            },
+            {
+                "steps": 5999279,
+                "file_path": "results\\Test02_07\\CarSimulation\\CarSimulation-5999279.onnx",
+                "reward": null,
+                "creation_time": 1654561167.490334,
+                "auxillary_file_paths": [
+                    "results\\Test02_07\\CarSimulation\\CarSimulation-5999279.pt"
+                ]
+            },
+            {
+                "steps": 6499653,
+                "file_path": "results\\Test02_07\\CarSimulation\\CarSimulation-6499653.onnx",
+                "reward": null,
+                "creation_time": 1654562293.9190714,
+                "auxillary_file_paths": [
+                    "results\\Test02_07\\CarSimulation\\CarSimulation-6499653.pt"
+                ]
+            },
+            {
+                "steps": 6999626,
+                "file_path": "results\\Test02_07\\CarSimulation\\CarSimulation-6999626.onnx",
+                "reward": null,
+                "creation_time": 1654563405.7899604,
+                "auxillary_file_paths": [
+                    "results\\Test02_07\\CarSimulation\\CarSimulation-6999626.pt"
+                ]
+            },
+            {
+                "steps": 7307803,
+                "file_path": "results\\Test02_07\\CarSimulation\\CarSimulation-7307803.onnx",
+                "reward": null,
+                "creation_time": 1654564110.0458214,
+                "auxillary_file_paths": [
+                    "results\\Test02_07\\CarSimulation\\CarSimulation-7307803.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7307803,
+            "file_path": "results\\Test02_07\\CarSimulation.onnx",
+            "reward": null,
+            "creation_time": 1654564110.0458214,
+            "auxillary_file_paths": [
+                "results\\Test02_07\\CarSimulation\\CarSimulation-7307803.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

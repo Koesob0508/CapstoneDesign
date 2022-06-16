@@ -11,7 +11,10 @@ public class TestAgent : Agent
     public Navigator navigator;
     public GameObject target;
     public int timeScale;
+    public int currentStep;
 
+    public float time;
+    public float negativeReward;
     public float rayDistance; // ray 최대 거리
     public float accel;
     public float targetRadius;
@@ -31,6 +34,7 @@ public class TestAgent : Agent
     private RaycastHit raycastHit; // RayCast를 위한 변수
 
     private Vector3 heightVector;
+    public bool isTestMode;
 
     public override void Initialize()
     {
@@ -44,18 +48,31 @@ public class TestAgent : Agent
 
         obstacleLayer = 1 << 8;
 
-        Time.timeScale = timeScale;
+        negativeReward = 0f;
+
+        
+        
+    }
+
+    private void Update()
+    {
+        if (isTestMode)
+        {
+            Time.timeScale = timeScale;
+        }
     }
 
     public override void OnEpisodeBegin()
     {
         //this.gameObject.transform.localPosition = new Vector3(Random.Range(-5f, 5f), 0f, Random.Range(-5f, 5f));
         //this.gameObject.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
-        
+
 
         // goal.transform.localPosition = goalPositionList[index];
         navigator.OnNavigator();
         carRigidbody.velocity = Vector3.zero;
+
+        time = 0f;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -72,7 +89,7 @@ public class TestAgent : Agent
         sensor.AddObservation(carRigidbody.velocity.z); // 1
 
         Vector2 agentForward = new Vector2(this.transform.forward.x + this.transform.position.x, this.transform.forward.z + this.transform.position.z);
-        
+
         // targetForward
         Vector2 targetForward = new Vector2(target.transform.forward.x + target.transform.position.x, target.transform.forward.z + target.transform.position.z);
 
@@ -83,7 +100,7 @@ public class TestAgent : Agent
         sensor.AddObservation(forwardDistance);
 
         CastRay(rayCount);
-        
+
         int maxCount = 3;
         int rayIndex = 0;
 
@@ -94,7 +111,7 @@ public class TestAgent : Agent
             fromObstacle.x += direction.Value.x;
             fromObstacle.y += direction.Value.z;
 
-            if(rayIndex == maxCount-1)
+            if (rayIndex == maxCount - 1)
             {
                 break;
             }
@@ -104,7 +121,7 @@ public class TestAgent : Agent
 
         if (rayVectors.Count != 0)
         {
-            if(rayVectors.Count < maxCount)
+            if (rayVectors.Count < maxCount)
             {
                 fromObstacle /= rayVectors.Count;
             }
@@ -112,7 +129,6 @@ public class TestAgent : Agent
             {
                 fromObstacle /= maxCount;
             }
-            
         }
 
         rayVectors.Clear();
@@ -122,28 +138,40 @@ public class TestAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        if (negativeReward > -1f)
+        {
+            currentStep++;
+            negativeReward = -currentStep * 0.0000003f * 25;
+        }
+        else
+        {
+            negativeReward = -1f;
+        }
+
         carController.horizontalInput = actions.ContinuousActions[0];
         carController.verticalInput = actions.ContinuousActions[1];
         if (actions.ContinuousActions[2] > 0)
         {
             carController.currentBrake = actions.ContinuousActions[2];
             carController.isBraking = true;
+            time += 1;
+            if (time > 100)
+            {
+                Debug.Log("시간 초과");
+                SetReward(-1f);
+                EndEpisode();
+            }
         }
         else
         {
             carController.isBraking = false;
+            time = 0f;
         }
 
-        if (toTarget.magnitude < targetRadius)
-        {
-            float reward = 0.3f;
-            if(toForward.magnitude < targetRadius)
-            {
-                reward += 0.3f;
-            }
-            SetReward(reward);
-            navigator.MoveNextPosition();
-        }
+        //if (toTarget.magnitude < targetRadius)
+        //{
+        //    navigator.MoveNextPosition(true);
+        //}
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -166,16 +194,13 @@ public class TestAgent : Agent
         if (other.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("교통 사고");
+            SetReward(negativeReward);
 
-            if (this.StepCount < 300000)
-            {
-                AddReward(-0.000003f);
-            }
-            else
-            {
-                SetReward(-0.9f);
-            }
             EndEpisode();
+        }
+        else if (other.gameObject.CompareTag("Goal"))
+        {
+            navigator.MoveNextPosition(false);
         }
     }
 
@@ -223,7 +248,15 @@ public class TestAgent : Agent
 
             Vector3 weightedDirectionVector = direction * (float)weightedRatio;
             // rayVectors.Add(Weighted Direction Vector) -> Vector2로 보내는게 낫지 않을까 -> 불분명할듯
-            rayVectors.Add(-weightedRatio, weightedDirectionVector);
+            if (rayVectors.ContainsKey(-weightedRatio))
+            {
+                rayVectors.Add(-weightedRatio + 0.00000000001, weightedDirectionVector);
+            }
+            else
+            {
+                rayVectors.Add(-weightedRatio, weightedDirectionVector);
+            }
+
         }
     }
 }

@@ -1,0 +1,62 @@
+{
+    "mass": {
+        "lesson_num": 0
+    },
+    "scale": {
+        "lesson_num": 0
+    },
+    "CarSimulation": {
+        "checkpoints": [
+            {
+                "steps": 6549,
+                "file_path": "results\\Test02_05\\CarSimulation\\CarSimulation-6549.onnx",
+                "reward": -1.0,
+                "creation_time": 1654542148.3119047,
+                "auxillary_file_paths": [
+                    "results\\Test02_05\\CarSimulation\\CarSimulation-6549.pt"
+                ]
+            },
+            {
+                "steps": 205328,
+                "file_path": "results\\Test02_05\\CarSimulation\\CarSimulation-205328.onnx",
+                "reward": -1.0,
+                "creation_time": 1654542877.3164318,
+                "auxillary_file_paths": [
+                    "results\\Test02_05\\CarSimulation\\CarSimulation-205328.pt"
+                ]
+            },
+            {
+                "steps": 499831,
+                "file_path": "results\\Test02_05\\CarSimulation\\CarSimulation-499831.onnx",
+                "reward": -1.6115998923778534,
+                "creation_time": 1654544254.5831776,
+                "auxillary_file_paths": [
+                    "results\\Test02_05\\CarSimulation\\CarSimulation-499831.pt"
+                ]
+            },
+            {
+                "steps": 558265,
+                "file_path": "results\\Test02_05\\CarSimulation\\CarSimulation-558265.onnx",
+                "reward": -1.4371998310089111,
+                "creation_time": 1654544447.6537197,
+                "auxillary_file_paths": [
+                    "results\\Test02_05\\CarSimulation\\CarSimulation-558265.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 558265,
+            "file_path": "results\\Test02_05\\CarSimulation.onnx",
+            "reward": -1.4371998310089111,
+            "creation_time": 1654544447.6537197,
+            "auxillary_file_paths": [
+                "results\\Test02_05\\CarSimulation\\CarSimulation-558265.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

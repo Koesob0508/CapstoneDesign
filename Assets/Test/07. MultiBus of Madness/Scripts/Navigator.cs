@@ -29,8 +29,14 @@ public class Navigator : MonoBehaviour
 
     public virtual void MoveNextPosition()
     {
+        
         Debug.Log("∞Ò¿Œ");
         SetParkingTest();
+    }
+
+    public virtual void MoveNextPosition(bool _isGoal)
+    {
+
     }
 
     private void SetParkingTest()

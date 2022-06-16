@@ -562,16 +562,19 @@ MonoBehaviour:
   MaxStep: 0
   navigator: {fileID: 0}
   target: {fileID: 0}
+  timeScale: 0
+  time: 0
+  thresholdTime: 10
   rayDistance: 10
   accel: 20
-  goalRadius: 0.5
+  targetRadius: 0
   rayCount: 32
   carRigidbody: {fileID: 0}
   carController: {fileID: 0}
-  rayVectors: []
   obstacleLayer: 0
   toTarget: {x: 0, y: 0}
   fromObstacle: {x: 0, y: 0}
+  toForward: {x: 0, y: 0}
 --- !u!1 &8801140837217924364
 GameObject:
   m_ObjectHideFlags: 0
