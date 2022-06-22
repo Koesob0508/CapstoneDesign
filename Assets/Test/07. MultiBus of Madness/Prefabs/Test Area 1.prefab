@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6fa2665a07e5a4984b14a0b2a4595e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testAgent: {fileID: 6490590287786350666}
   target: {fileID: 6088563442472294994}
   parkingPositions: []
   parkingBlock: []
@@ -706,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 627688398019988236, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5022602860645237092, guid: a9222a838e078fb408a0fa9afb626507, type: 3}
     - target: {fileID: 627688398019988236, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
       propertyPath: m_BehaviorType
       value: 0
@@ -717,6 +718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
+--- !u!1 &6490590287786350666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 627688398019988226, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
+  m_PrefabInstance: {fileID: 5955669932925948744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6487331864571727098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 621896739960938418, guid: 3ee5005d787b7eb4aa446fc6cfb25172, type: 3}
